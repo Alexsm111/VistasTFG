@@ -1,38 +1,35 @@
 import React from 'react';
 
-export default function Home() {
+export default function Iniciosesion() {
   return (
     <div className="flex flex-col min-h-screen font-sans">
       
       {/* Contenido Principal */}
       <div className="flex flex-col lg:flex-row flex-grow">
-        
+
         {/* Izquierda */}
-        <div className="w-full lg:w-1/2 px-6 py-8 lg:p-12 flex flex-col gap-6">
+        <div className="w-full lg:w-1/2 px-6 py-8 lg:p-12 flex flex-col gap-6 justify-center">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
-            Viaja a cualquier lugar con la app TAKEMEAWAY.
+            Bienvenido de nuevo a TAKEMEAWAY
           </h1>
+          <p className="text-gray-600">Inicia sesión para continuar viajando con nosotros.</p>
+          
           <input
-            type="text"
-            placeholder="Ubicación de recogida"
+            type="email"
+            placeholder="Correo electrónico"
             className="p-3 border rounded-md"
           />
           <input
-            type="text"
-            placeholder="Ubicación de destino"
+            type="password"
+            placeholder="Contraseña"
             className="p-3 border rounded-md"
           />
-          <div className="flex flex-col sm:flex-row gap-2">
-            <select className="p-2 border rounded-md w-full sm:w-1/2">
-              <option>Hoy</option>
-            </select>
-            <select className="p-2 border rounded-md w-full sm:w-1/2">
-              <option>Ahora</option>
-            </select>
-          </div>
           <button className="bg-black text-white px-4 py-2 rounded-md w-fit">
-            Ver precios
+            Iniciar sesión
           </button>
+          <p className="text-sm text-gray-600">
+            ¿No tienes una cuenta? <a href="/registro" className="text-blue-600 underline">Regístrate</a>
+          </p>
         </div>
 
         {/* Derecha */}

@@ -14,7 +14,10 @@ import Footer from './components/Footer';
 import Home from './pages/Home'
 import Viajes from './pages/Viajes'
 import Conductor from './pages/Conductor'
-
+import Iniciosesion from './pages/Iniciosesion'
+import Registro from './pages/Registro'
+import Perfil from './pages/Perfil'
+import Iniciado from './pages/Iniciado'
 
 function EstructuraPrincipal() {
   return <>
@@ -57,6 +60,42 @@ const rutas = createBrowserRouter([
     children: [{
       path: '/Conductor',
       element: <Conductor />
+    },
+  ]
+  },
+  {
+    element: <EstructuraPrincipal />,
+    errorElement: <ErrorPage />,
+    children: [{
+      path: '/Iniciosesion',
+      element: <Iniciosesion />
+    },
+  ]
+  },
+  {
+    element: <EstructuraPrincipal />,
+    errorElement: <ErrorPage />,
+    children: [{
+      path: '/Registro',
+      element: <Registro />
+    },
+  ]
+  },
+  {
+    element: <EstructuraPrincipal />,
+    errorElement: <ErrorPage />,
+    children: [{
+      path: '/Perfil',
+      element: <Perfil />
+    },
+  ]
+  },
+  {
+    element: <EstructuraPrincipal />,
+    errorElement: <ErrorPage />,
+    children: [{
+      path: '/Iniciado',
+      element: <Iniciado />
     },
   ]
   },
